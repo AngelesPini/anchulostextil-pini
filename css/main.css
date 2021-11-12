@@ -1,0 +1,310 @@
+body {
+    background-color: lavenderblush;
+    background-image:url("../multimedia/imagenes/flores-cerezo-transparente.jpg") ;
+    background-size:cover;
+    background-attachment:fixed;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "header main main main"
+    "header main main main"
+    "header main main main"
+    "footer footer footer footer"
+}
+nav {
+    grid-area: nav;
+}
+header {
+    grid-area: header;
+}
+main { 
+    grid-area: main;
+}
+footer { 
+    grid-area: footer;
+}
+/*lista index*/
+ul li {
+    list-style-type: none;
+}
+   /*flexbox*/
+.navegador-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+        font-size: 1.5em;
+}
+.navegador-1 div {
+        width: 100;
+        padding: 5px;
+        margin: 5px;
+        background-size: auto;
+        display: flex;
+        justify-items: space-evenly;
+    }
+ul li a { padding: -100px;
+        margin: 10px;
+        /* padding: 10px; */
+        display: grid;
+        justify-items: center;
+        justify-content: space-between;
+}
+    /* ul li {text-align: right;} */
+img.logo {
+         width: 200px; height: 150px;
+    float: left;
+}
+.links {
+    text-decoration:none;
+    font-family: 'Advent Pro', sans-serif;
+}
+    /*carateristicas navegador*/
+.links-prime { 
+    color: #ebb5b5;
+    font-family: 'Advent Pro', sans-serif;
+}
+.links-sec { 
+        color: #ebb5b5;
+    }
+    /*encabezado*/
+div.about-us {
+     /* background-color: ivory; */
+     color: rgb(240, 98, 122);
+    font-family:'Archivo Black', sans-serif;
+    font-family: 'Advent Pro', sans-serif;
+    text-align: left;
+}
+h1 {
+    color: #ee7c7c;
+    text-decoration: none;
+    text-align: left;
+    font-size: 5.5em;
+    font-family: 'Archivo Black', sans-serif;
+    margin: 25px 10px 5px 10px;
+}
+.subtitulo {
+        color: #ee7c7c;
+    font-family: 'Advent Pro Medium' , sans-serif;
+    text-align: left;
+    font-size: 3em;
+
+}
+.definicion {
+    color:rgb(255, 255, 255);
+    font-family: 'Advent Pro Light', sans-serif;
+    text-align: left;
+}
+
+footer {
+        text-align: center;
+        font-family: 'Advent Pro Light', sans-serif;
+}
+ 
+.intro {
+    margin: 150px;
+    padding: 50px;
+    font-size: 1.2em;
+    font-family: 'Advent Pro Regular', sans-serif;
+    text-align: center;
+}
+.intro-1 {
+    padding: 150px;
+    margin: -150px;
+}
+.grid-container div {
+    font-size: 1.1em;
+    color: #ebb5b5;
+    font-family: 'Advent Pro Regular', sans-serif;
+    text-align: center;
+    
+   
+}
+.grid-container{
+    margin-right: 150px;
+    margin: 150px;
+    padding: 50px;
+    display: grid;
+    justify-items: left;
+    align-content: left;
+    align-items: left;
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    "item-5";
+}
+
+.item-1 {
+    grid-area: item-1;
+    margin: 2px;
+    display: grid;
+
+}
+.item-2 {
+    grid-area: item-2;
+    margin: 7px;
+    display: grid;
+ 
+}
+.item-3 {
+    grid-area: item-3;
+    margin: 7px;
+}
+.tem-4 {
+    grid-area: item-4;
+    margin: 7px;
+}
+.item-5 {
+    grid-area: item-5;
+    margin: 7px;
+}
+input {
+    display: flex;
+    align-items: left;
+}
+label {
+    display: flex;
+    align-items: left;
+}
+textarea {
+    display: flex;
+    align-items: left;
+}
+/* ============== */
+.links:hover {
+        animation-duration: 1s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+     }
+     
+     
+     @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        50% {
+            opacity: .5;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+     
+.about-us {
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: .3s;
+}
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+ /* =========== */
+ /* Productos.html */
+ 
+.productos {
+    margin-top: 250px;
+    text-align: center;
+    right: -500px;
+    color: #ee7c7c;
+    text-decoration: none;
+    font-size: 5.5em;
+    font-family: 'Archivo Black', sans-serif;
+    padding: -350px;
+    margin: 100px 150px 5px 10px;
+}
+.desc { 
+    margin-top: 350px;
+    color:rgb(255, 255, 255);
+    font-family: 'Advent Pro Light', sans-serif;
+    text-align: center;
+    margin: 200px 10px 10px 5px;
+}
+
+ /* Galeria de imagenes*/
+
+img.producto {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+img.producto1 {
+    max-width: 100%;
+    width: 300px;
+    height: 250px;
+}
+.galeria div{
+    margin-top: 500px;
+    display: grid;
+    justify-content: left;
+    margin: 110px 150px 5px 10px;
+}
+.galeria-izquierda {
+    margin: 50px 150px 5px 10px;
+}
+.foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+    .foto:hover {
+        transform: scale(1.5,1.5);
+    }
+    .links:hover {
+        animation-duration: 1s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+     }
+     @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        25% {
+            opacity: .25;
+        }
+        50% {
+            opacity: .5;
+        }
+        75% {
+            opacity: .75;
+        }
+        100% {
+          opacity: 1;
+        }
+     }
+     .descripcion {
+        color: mintcream;
+       font-family: 'Advent Pro Regular', sans-serif;
+   }
+   .ayuda {
+    text-align: left;
+    margin: 100px 150px 5px 10px;
+   }
+   .subtitulo-1 {
+color: #ee7c7c;
+font-family: 'Advent Pro Medium' , sans-serif;
+text-align: left;
+font-size: 3em;
+margin: 0px;
+top: 15px;
+}

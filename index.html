@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
-    <!--Main css-->
-    <link rel="stylesheet" href="css/main.css">
-    <title>Anchulo's Textil</title>
-
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/main.css">
+    <title>Anchulos Textil</title>
 </head>
- <body>
-    <header>
-    <nav>
-        <a class="links links-prime" href="index.html">
-            <img src="multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
-        </a>
-        <ul class="navegador-1">
-            <li>
-                <a class="links links-prime" href="pages/productos.html">Productos</a>
-            </li>
-             <li>
-                 <a class="links links-prime" href="pages/contacto.html">Contacto</a>
-             </li>
-            <li>
-                <a class="links links-prime" href="pages/ayuda.html">Ayuda</a>
-            </li>
-            <li>
-                <a class="links links-sec" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
-            </li>
-            <li>
-                <a class="links links-sec" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
-            </li>
-        </ul>
-    </nav>
-    <!-- acá comienza el contenido de mi sitio -->
-        <div class="about-us">
-            <h1> ANCHULOS <br>TEXTIL</h1>
-            <h2 class="subtitulo">Siempre sé vos</h2>
-            <h3 class="definicion">Vos lo diseñas, nosotros lo creamos</h3>
-        </div> 
-    </header>
 
-    <main class="intro">    
-        <p class="descripcion"> Somos la última tendencia en moda y acesorios 100% personalizados, para que  <b style= "color: #ebb5b5;">tu interior y tu exterior estén siempre en armonía</b>
-        </p>
+
+<body>
+<!-- header start -->
+<header class="p-1">
+  <div class="about-us">
+    <h1 class="text-center p-1" > ANCHULOS <br>TEXTIL</h1>
+    <h2 class="subtitulo text-center fs-3">Siempre sé vos</h2>
+    <h3 class="definicion text-center">Vos lo diseñas, nosotros lo creamos</h3>
+  </div> 
+</header>
+<!-- header end -->
+<!-- nav start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-fluid">
+    <a class="links links-prime" href="index.html">
+      <img src="multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse collapse show" id="navbarNav">
+      <div class="navbar-nav bloque-de-texto d-flex align-items-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/ayuda.html">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
+        </li>
+        <li>
+          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- nav end -->
+<!-- main start -->
+<main class="intro p-4"> 
+    <section class="intro-1 container fs-4 text-center">
+      <p class="descripcion"> Somos la última tendencia en moda y acesorios 100% personalizados, para que  <b style= "color: #ebb5b5;">tu interior y tu exterior estén siempre en armonía</b>
+      </p>
 
 <!-- Esto es información básica en cuanto a mi emprendimiento -->      
-        <section class="intro-1">
-            <h3 class="title"> Información útil </h3>
-          
-            <p> Variedad de tamaños</p>
-            <p> Si no encontrás lo que buscás en nuestro catálogo <strong><a href="pages/contacto.html" target="_blank"  class="links links-prime">contactanos</a></strong> para convertir tu idea en un producto especialmente hecho para vos</p>
-            <p> Podés personalizar incluso la tela para tener tu accesorio ideal.
-            Hacemos envíos a todo el país</p>
+    
+      <h3 class="title"> Información útil </h3>
+      <p> Variedad de tamaños</p>
+      <p> Si no encontrás lo que buscás en nuestro catálogo <strong><a href="pages/contacto.html" target="_blank"  class="links links-prime">contactanos</a></strong> para convertir tu idea en un producto especialmente hecho para vos</p>
+      <p> Podés personalizar incluso la tela para tener tu accesorio ideal.
+      Hacemos envíos a todo el país</p>
     </section>
 </main>
+<!-- main end -->
 <!-- footer -->
-    <footer>
-    <p>AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
-    </footer>
+<footer>
+<p class="text-center">AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
+</footer>
+
+<!-- footer end -->
+
+ <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
 </body>
-
-
-</html> 
+</html>

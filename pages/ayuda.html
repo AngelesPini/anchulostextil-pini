@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
-        <!-- main css-->
-    <link rel="stylesheet" href="../css/main.css">
-    <title>Ayuda</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
+        <!-- CSS bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/main.css">
+    <title>Anchulos Textil</title>    
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-    <nav>
-        <a class="links links-prime" href="../index.html">
-             <img src="../multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
-         </a>
-         <ul class="navegador-1">
-             <li>
-                 <a class="links links-prime" href="../pages/productos.html">Productos</a>
-             </li>
-             <li>
-                 <a class="links links-prime" href="../pages/contacto.html">Contacto</a>
-             </li>
-             <li>
-                 <a class="links links-prime" href="../pages/ayuda.html">Ayuda</a>
-             </li>
-             <li>
-                 <a class="links links-sec" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
-             </li>
-             <li>
-                 <a class="links links-sec" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
-             </li>
-         </ul>
-</nav>
-
-
-<div class="about-us"> <h1 class="ayuda">AYUDA</h1>
-    <h2 class="subtitulo-1">¿No encontrás lo que buscás?</h2>
-    <h3 class="definicion">Escribinos para contactarte y resolver tus inquietudes</h3></div>
+  <!-- header start -->
+<header>
+    <div class="text-center p-1"> <h1 class="ayuda">AYUDA</h1>
+        <h2 class="subtitulo text-center fs-3">¿No encontrás lo que buscás?</h2>
+        <h3 class="definicion text-center">Escribinos para contactarte y resolver tus inquietudes</h3></div>
 </header>
+<!-- header end -->
+<!-- nav start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <div class="container-fluid">
+      <a class="links links-prime" href="../index.html">
+      <img src="../multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse collapse show" id="navbarNav">
+       <div class="navbar-nav bloque-de-texto d-flex align-items-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/ayuda.html">Ayuda</a>
+          </li>
+          <li class="nav-item">
+            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
+          </li>
+          <li>
+            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
+        </li>
+        </ul>
+        </div>
+      </div>
+  </div>
+</nav>
+<!-- nav end -->
+<!-- main start -->
 <main>
-    <div class="grid-container">
-        <div class="item-1">
-            <label for="datos">Nombre y apellido</label>
-            <input type="Nombre y apellido" required>
-        </div>
-        <div class="item-2">
-            <label for="email">Correo Electrónico</label>
-            <input type="email" required>
-        </div>
-        <div class="item-3">
-            <label for="ciudad">Ciudad</label>
-            <input type="ciudad" required>
-        </div>
-        <div class="item-4">
-            <label for="telefono">Teléfono</label>
-            <input type="telefono" required>
-        </div>
-        <div class="item-5">
-            <p class="form">Dejanos tus dudas acá abajo</p>
-            <textarea> 
-            </textarea>
-        <div class="item-6">
-            <Button type="sumbit" value="Listo!">Listo!</Button>
-        </div>
-        
+    <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contacto por email</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dejanos tus datos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Teléfono:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Correo electrónico:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Ciudad:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Mensaje:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary bg-danger">Listo!</button>
+      </div>
     </div>
+  </div>
+</div>
 </main>
-<!-- EL FORMULARIO FUE REEMPLAZADO POR DIV CON CSS GRID -->
-    <!-- <div class="formulario"><form>Ponete en contacto con nosotros</form>
-    <label for="datos">Nombre y apellido</label>
-    <br><input type="Nombre y apellido" required>
-    <br><label for="email">Correo Electrónico</label>
-    <br><input type="email" required>
-  
-   <p class="form">Dejanos tus dudas acá abajo</p>
-   <br> <textarea> 
-     </textarea>
-     <br><Button type="sumbit" value="Listo!">Listo!</Button></div> -->
-     <!--"listo!2 redirecciona a otra página donde queda confirma el envío del formulario" -->
-
-<!-- el siguiente texto es de prueba, para añadir flexbox e intentar acomodar varios div en una sola pagina -->
+<!-- main end -->
+<!-- footer start -->
 <footer>
-    <p>AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
+   <br><p class="text-center">AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
 </footer>
-    
-    
+<!-- footer end -->
+     <!-- javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>      
 </body>
-
 </html>

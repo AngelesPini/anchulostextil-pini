@@ -17,48 +17,58 @@
 
 
 <body>
+
 <!-- header start -->
 <header class="p-1">
   <div class="about-us">
-    <h1 class="text-center p-1" > ANCHULOS <br>TEXTIL</h1>
-    <h2 class="subtitulo text-center fs-3">Siempre sé vos</h2>
-    <h3 class="definicion text-center">Vos lo diseñas, nosotros lo creamos</h3>
+    <h1 class="p-1" > ANCHULOS <br>TEXTIL</h1>
+    <h2 class="subtitulo">Siempre sé vos</h2>
+    <h3 class="definicion">Vos lo diseñas, nosotros lo creamos</h3>
   </div> 
 </header>
 <!-- header end -->
+
 <!-- nav start -->
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-  <div class="container-fluid">
-    <a class="links links-prime" href="index.html">
-      <img src="multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
-    </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid">
+        <a class="links links-prime navbar-brand" href="index.html">
+            <img src="multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse collapse show" id="navbarNav">
-      <div class="navbar-nav bloque-de-texto d-flex align-items-end">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/ayuda.html">Ayuda</a>
-        </li>
-        <li class="nav-item">
-          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
-        </li>
-        <li>
-          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="links links-prime p-5 text-decoration-none fs-5" href="pages/ayuda.html">Ayuda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="productos/mochilas.html">Mochilas</a></li>
+                <li><a class="dropdown-item" href="productos/riñoneras.html">Riñoneras</a></li>
+                <li><a class="dropdown-item" href="productos/cartucheras.html">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="productos/bolsos.html">Bolsos y bandoleras</a></li>
+                <li><a class="dropdown-item" href="productos/mayorista.html">Mayorista</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
+          </li>
+          <li>
+            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <!-- nav end -->
+
 <!-- main start -->
 <main class="intro p-4"> 
     <section class="intro-1 container fs-4 text-center">
@@ -75,6 +85,7 @@
     </section>
 </main>
 <!-- main end -->
+
 <!-- footer -->
 <footer>
 <p class="text-center">AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
@@ -83,7 +94,7 @@
 <!-- footer end -->
 
  <!-- javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
 </body>
 </html>

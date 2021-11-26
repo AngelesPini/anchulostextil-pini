@@ -1,0 +1,55 @@
+$color-1: #ee7c7c;
+$color-2: rgb(255, 255, 255);
+$color-3: #ebb5b5;
+
+header{
+    h1 {
+        color: $color-1;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 5.5em;
+        justify-content: left;
+    }
+    .subtitulo {
+        font-size: 3em;
+        justify-content: left;
+        color: $color-1;
+        font-family: 'Advent Pro Medium' , sans-serif;
+    
+    }
+    .definicion {
+        font-size: 2em;
+        justify-content: left;
+        color: $color-2;
+        font-family: 'Advent Pro Light', sans-serif;
+    }
+    //animaciones   
+    h1 {
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    }
+    @keyframes aparecer {
+        0% {
+          opacity: 0;
+        }
+        25% {
+            opacity: .25;
+        }
+        50% {
+            opacity: .5;
+        }
+        75% {
+            opacity: .75;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    .preg {
+        margin: 150px;
+        top: 50px;
+        margin-left: 0px;
+    }   
+}

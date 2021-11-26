@@ -1,0 +1,30 @@
+body {
+    background-color: lavenderblush;
+    background-image:url("../multimedia/imagenes/flores-cerezo-transparente.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "header main main"
+    "header main main"
+    "footer footer footer";
+
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
+
+@import "nav";
+@import "header";
+@import "main";
+@import "responsive";

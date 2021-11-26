@@ -1,0 +1,60 @@
+$tamaño-logo: 400px;
+$color-1: #ee7c7c;
+$color-2: rgb(255, 255, 255);
+$color-3: #ebb5b5;
+nav {
+    .nav-link {
+    color: $color-3;    
+    text-decoration:none;
+    font-family: 'Advent Pro', sans-serif;
+    }
+
+    .dropdown-toggler {
+    color: $color-3;    
+    text-decoration: none;
+    font-family: 'Advent Pro', sans-serif;
+    }
+    .dropdown-item {
+    color: $color-3;
+    font-family: 'Advent Pro', sans-serif;
+    }
+    img.logo {
+    width: $tamaño-logo/2; height: $tamaño-logo/2-50px;
+    float: left;
+    }
+    .links {
+    text-decoration:none;
+    font-family: 'Advent Pro', sans-serif;
+    }
+        //caracteristicas
+    .links-prime { 
+        color: $color-3;
+        font-family: 'Advent Pro', sans-serif;
+    }
+    .links-sec { 
+            color: $color-3;
+        }
+        //animaciones nav
+    .links:hover {
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    }
+    @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+      opacity: 1;
+    }
+    }
+}

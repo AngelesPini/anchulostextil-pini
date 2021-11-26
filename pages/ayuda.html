@@ -13,55 +13,71 @@
         <!-- main css -->
         <link rel="stylesheet" href="../css/main.css">
     <title>Anchulos Textil</title>    
-    <title>Document</title>
 </head>
 
 <body>
+
   <!-- header start -->
 <header>
-    <div class="text-center p-1"> <h1 class="ayuda">AYUDA</h1>
-        <h2 class="subtitulo text-center fs-3">¿No encontrás lo que buscás?</h2>
-        <h3 class="definicion text-center">Escribinos para contactarte y resolver tus inquietudes</h3></div>
+    <div class="p-1"> 
+      <h1 class="ayuda">AYUDA</h1>
+      <h2 class="subtitulo">¿No encontrás lo que buscás?</h2>
+      <h3 class="definicion">Escribinos para contactarte y resolver tus inquietudes</h3>
+      <div class=" d-none d-sm-none d-md-block">
+        <h1 class="preg">PREGUNTAS <br> FRECUENTES</h1>
+      </div>
+    </div>
 </header>
 <!-- header end -->
+
 <!-- nav start -->
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
   <div class="container-fluid">
-      <a class="links links-prime" href="../index.html">
-      <img src="../multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
+      <a class="links links-prime navbar-brand" href="../index.html">
+          <img src="../multimedia/imagenes/Logo Anchulos rosa png.png" alt="logo" class="logo">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse collapse show" id="navbarNav">
-       <div class="navbar-nav bloque-de-texto d-flex align-items-end">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/ayuda.html">Ayuda</a>
-          </li>
-          <li class="nav-item">
-            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
-          </li>
-          <li>
-            <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/contacto.html">Contacto</a>
         </li>
-        </ul>
-        </div>
-      </div>
+        <li class="nav-item">
+          <a class="links links-prime p-5 text-decoration-none fs-5" href="../pages/ayuda.html">Ayuda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Productos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="../productos/mochilas.html">Mochilas</a></li>
+            <li><a class="dropdown-item" href="../productos/riñoneras.html">Riñoneras</a></li>
+            <li><a class="dropdown-item" href="../productos/cartucheras.html">Cartucheras</a></li>
+            <li><a class="dropdown-item" href="../productos/bolsos.html">Bolsos y bandoleras</a></li>
+            <li><a class="dropdown-item" href="../productos/mayorista.html">Mayorista</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.facebook.com/anchulostextil" target="_blank"><b>Facebook</b></a>
+        </li>
+        <li>
+          <a class="links links-sec p-5 text-decoration-none fs-5" href="https://www.instagram.com/anchulostextil/" target="_blank"><b>Instagram</b></a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 <!-- nav end -->
+
 <!-- main start -->
 <main>
-    <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contacto por email</button>
+<section>
+  <!-- FORMULARIO -->
+  <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contacto por email</button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -99,15 +115,38 @@
     </div>
   </div>
 </div>
+</section>
+<!-- PREGUNTAS FRECUENTES -->
+<section>
+  <div class="d-block d-sm-block d-md-none"><p class="titulo">PREGUNTAS FRECUENTES</p></div>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0" class="preguntas p-5">
+   <h4 id="item-1">¿Qué formas de pago puedo aprovechar?</h4>
+     <p>Aceptamos todos los medios de pago. Desde efectivo hasta todas las tarjetas bancarias</p>
+    <h5 id="item-1-1">Pago online</h5>
+     <p>Contamos con todos los beneficios de la plataforma MERCADOPAGO. Descuentos y promociones bancarias, transferencias y envío de dinero</p>
+    <h5 id="item-1-2">Si querés pagar con tarjeta</h5>
+     <p>Podes solicitar el qr o te podemos generar un link de cobro</p>
+   <h4 id="item-2">¿Como hago mi pedido?</h4>
+    <p>Todos los pedidos (minoristas o mayoristas) Se toman con una seña del 50% correspondiente al valor total del producto que elijas</p>
+   <h4 id="item-3">¿Cómo se realizan los envíos?</h4>
+    <p>Trabajamos con envíos a todo el país, a través de Correo Argentino. El monto del envío se agrega al valor total de tu pedido</p>
+   <h5 id="item-3-1">¿Cuánto tarda en llegar mi pedido?</h5>
+    <p>A través de Correo Argentino de 2 a 5 días hábiles</p>
+   <h5 id="item-3-2">¿Dónde puedo recibir mi pedido?</h5>
+    <p>Al momento de realizar la compra nos contactaremos con vos, pidiendote tus datos y horarios en los que podamos encontrarte donde nos indiques</p>
+  </div>
+</section>
 </main>
 <!-- main end -->
+
 <!-- footer start -->
 <footer>
    <br><p class="text-center">AnchulosTextil . Todos los derechos reservados . Santa Fe Capital, CP3000</p>
 </footer>
 <!-- footer end -->
-     <!-- javascript -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>      
+
+<!-- javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>      
 </body>
 </html>

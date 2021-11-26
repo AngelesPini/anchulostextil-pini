@@ -1,0 +1,96 @@
+$tamaño-h: 25%;
+$tamaño-m: 50%;
+$tamaño-s: 100px;
+$color-1: #ee7c7c;
+$color-2: rgb(255, 255, 255);
+$color-3: #ebb5b5;
+$separacion: 100px 10px 5px 10px;
+@mixin size {
+    top: 300px;
+    margin-bottom: 500px;
+    margin-right: 500px;
+    margin: $separacion;
+}
+
+main { 
+    font-family: 'Advent Pro', sans-serif;
+    p {
+        font-family: 'Advent Pro', sans-serif;
+    }
+    .links {
+        text-decoration:none;
+        font-family: 'Advent Pro', sans-serif;
+        color: $color-3;
+    }
+    .carrusel {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    .carousel-inner img {
+        width: $tamaño-h*4;
+        max-height: ($tamaño-m*2);
+    }
+    
+    .carousel-inner{
+     height: $tamaño-h*4;
+     width: ($tamaño-m*2);
+    }
+    //botones ayuda.html
+    .btn {
+        margin: $tamaño-s/2;
+        padding: 15px;
+        font-size: 1.3em;
+        font-family: 'Advent Pro', sans-serif;
+    }
+    button {
+        background-color: $color-1;
+        color: $color-1;
+    }
+    //caracteristicas formulario
+    .modal-title {
+        color: $color-1;
+        font-family: 'Advent Pro', sans-serif;
+    }
+    .col-form-label{
+        color: $color-1;
+        font-family: 'Advent Pro', sans-serif;
+    }
+    .modal-body {
+        color: $color-1;
+        font-family: 'Advent Pro', sans-serif;
+    }
+    //formulario js
+    .modal-title {
+    color: $color-1;
+    font-family: 'Advent Pro', sans-serif;
+    }
+    .col-form-label{
+    color: $color-1;
+    font-family: 'Advent Pro', sans-serif;
+    }
+    .modal-body {
+    color: $color-1;
+    font-family: 'Advent Pro', sans-serif;
+    }
+    h4 {
+    color: $color-1;
+    font-family: 'Advent Pro', sans-serif;    
+    }
+    h5 {
+    color: $color-2;
+    font-family: 'Advent Pro', sans-serif;    
+    }
+    p {
+    font-family: 'Advent Pro', sans-serif;
+    }
+    .preguntas {
+        @include size;
+        background-color: pink;
+    }
+    .titulo {
+        font-size: 3em;
+        font-family: 'Archivo Black', sans-serif;
+        color: $color-1
+    }
+}

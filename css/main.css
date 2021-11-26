@@ -1,198 +1,207 @@
 body {
-    background-color: lavenderblush;
-    background-image:url("../multimedia/imagenes/flores-cerezo-transparente.jpg") ;
-    background-size:cover;
-    background-attachment:fixed;
-    display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "header main main"
-    "header main main"
-    "footer footer footer";
-}
-header {
-    grid-area: header;
-}
-nav {
-    grid-area: nav;
-}
+  background-color: lavenderblush;
+  background-image: url("../multimedia/imagenes/flores-cerezo-transparente.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-areas: "nav nav nav" "header main main" "header main main" "footer footer footer"; }
+  body header {
+    grid-area: header; }
+  body nav {
+    grid-area: nav; }
+  body main {
+    grid-area: main; }
+  body footer {
+    grid-area: footer; }
+
+nav .nav-link {
+  color: #ebb5b5;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif; }
+
+nav .dropdown-toggler {
+  color: #ebb5b5;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif; }
+
+nav .dropdown-item {
+  color: #ebb5b5;
+  font-family: 'Advent Pro', sans-serif; }
+
+nav img.logo {
+  width: 200px;
+  height: 150px;
+  float: left; }
+
+nav .links {
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif; }
+
+nav .links-prime {
+  color: #ebb5b5;
+  font-family: 'Advent Pro', sans-serif; }
+
+nav .links-sec {
+  color: #ebb5b5; }
+
+nav .links:hover {
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .25; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .75; }
+  100% {
+    opacity: 1; } }
+
+header h1 {
+  color: #ee7c7c;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 5.5em;
+  justify-content: left; }
+
+header .subtitulo {
+  font-size: 3em;
+  justify-content: left;
+  color: #ee7c7c;
+  font-family: 'Advent Pro Medium' , sans-serif; }
+
+header .definicion {
+  font-size: 2em;
+  justify-content: left;
+  color: white;
+  font-family: 'Advent Pro Light', sans-serif; }
+
+header h1 {
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: .3s; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .25; }
+  50% {
+    opacity: .5; }
+  75% {
+    opacity: .75; }
+  100% {
+    opacity: 1; } }
+
+header .preg {
+  margin: 150px;
+  top: 50px;
+  margin-left: 0px; }
+
 main {
-    grid-area: main;
-}
-footer {
-    grid-area: footer;
-}
-
-img.logo {
-    width: 200px; height: 150px;
-float: left;
-}
-.links {
-    text-decoration:none;
+  font-family: 'Advent Pro', sans-serif; }
+  main p {
+    font-family: 'Advent Pro', sans-serif; }
+  main .links {
+    text-decoration: none;
     font-family: 'Advent Pro', sans-serif;
-}
-    /*carateristicas navegador*/
-.links-prime { 
-    color: #ebb5b5;
-    font-family: 'Advent Pro', sans-serif;
-}
-.links-sec { 
-        color: #ebb5b5;
-    }
-h1 {
-    color: #ee7c7c;
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 5.5em;
-}
-.subtitulo {
-    color: #ee7c7c;
-    font-family: 'Advent Pro Medium' , sans-serif;
-
-}
-.definicion {
-    color:rgb(255, 255, 255);
-    font-family: 'Advent Pro Light', sans-serif;
-}
-.footer {
-    text-align: center;
-    font-family: 'Advent Pro Light', sans-serif;
-}
-/* animaciones nav */
-.links:hover {
-    animation-duration: 1s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
- }
- @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    25% {
-        opacity: .25;
-    }
-    50% {
-        opacity: .5;
-    }
-    75% {
-        opacity: .75;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-
-/* animaciones */
-h1 {
-    animation-name: aparecer;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
-    animation-delay: .3s;
-}
-    @keyframes aparecer {
-        0% {
-          opacity: 0;
-        }
-        25% {
-            opacity: .25;
-        }
-        50% {
-            opacity: .5;
-        }
-        75% {
-            opacity: .75;
-        }
-        100% {
-          opacity: 1;
-        }
-}
-/* config. carrusel */
-.carrusel {
+    color: #ebb5b5; }
+  main .carrusel {
     display: grid;
     justify-content: center;
-    justify-items: center;
-}
-.carousel-inner img {
+    justify-items: center; }
+  main .carousel-inner img {
     width: 100%;
-    max-height: 600px;
-}
-
-.carousel-inner{
- height: 600px;
-}
-/* botones ayuda.html */
-.btn {
+    max-height: 100%; }
+  main .carousel-inner {
+    height: 100%;
+    width: 100%; }
+  main .btn {
     margin: 50px;
     padding: 15px;
     font-size: 1.3em;
-    font-family: 'Advent Pro', sans-serif;
-}
-button {
+    font-family: 'Advent Pro', sans-serif; }
+  main button {
     background-color: #ee7c7c;
+    color: #ee7c7c; }
+  main .modal-title {
     color: #ee7c7c;
-}
-/* ========= */
-.modal-title {
+    font-family: 'Advent Pro', sans-serif; }
+  main .col-form-label {
     color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main .modal-body {
+    color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main .modal-title {
+    color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main .col-form-label {
+    color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main .modal-body {
+    color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main h4 {
+    color: #ee7c7c;
+    font-family: 'Advent Pro', sans-serif; }
+  main h5 {
+    color: white;
+    font-family: 'Advent Pro', sans-serif; }
+  main p {
+    font-family: 'Advent Pro', sans-serif; }
+  main .preguntas {
+    top: 300px;
+    margin-bottom: 500px;
+    margin-right: 500px;
+    margin: 100px 10px 5px 10px;
+    background-color: pink; }
+  main .titulo {
+    font-size: 3em;
     font-family: 'Archivo Black', sans-serif;
-}
-.col-form-label{
-    color: #ee7c7c;
-    font-family: 'Archivo Black', sans-serif;
-}
-.modal-body {
-    color: #ee7c7c;
-    font-family: 'Archivo Black', sans-serif;
-}
+    color: #ee7c7c; }
 
-/* media queries */
-
-@media screen and (max-width:768px) {
-    body {
-        display: grid;
-        grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    }
-    header {
-        grid-area: header;
-    }
-    nav {
-        grid-area: nav;
-    }
-    main {
-        grid-area: main;
-    }
-    footer {
-        grid-area: footer;
-    }
-    ul li {
-        justify-items: right;
-        justify-content: right;
-        align-items: right;
-    }
-    h1 {
-        font-size: 3em;
-    }
-    h2 {
-        font-size: 2em;
-    }
-    h3 {
-        font-size: 1em;
-    }
-    .carrusel {
-        display: grid;
-        justify-content: center;
-        justify-items: center;
-    }
-    .carousel-inner img {
-        width: 100%;
-        max-height: 300px;
-    }
-    
-    .carousel-inner{
-     height: 300px;
-    }
-}
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-areas: "nav nav nav" "header header header" "main main main" "footer footer footer"; }
+  header {
+    grid-area: header; }
+  nav {
+    text-align: end;
+    justify-content: end;
+    grid-area: nav; }
+  main {
+    text-align: center;
+    justify-content: center;
+    grid-area: main; }
+  footer {
+    text-align: center;
+    justify-content: center;
+    grid-area: footer; }
+  ul li {
+    justify-items: end;
+    justify-content: end;
+    align-items: end; }
+  h1 {
+    font-size: 3em; }
+  h2 {
+    font-size: 2em; }
+  h3 {
+    font-size: 1em; }
+  .carrusel {
+    display: grid;
+    justify-content: center;
+    justify-items: center; }
+  .carousel-inner img {
+    width: 100%;
+    max-height: 300px; }
+  .carousel-inner {
+    height: 300px; }
+  .nav-item {
+    padding: 20px; } }
